@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<szemelyek>
+    <szemely id="1">
+            <nev>Krompaszki Patrik</nev>
+            <kor>23</kor>
+            <varos>Miskolc</varos>
+    </szemely>
+    <szemely id="2">
+            <nev>Vak Béla</nev>
+            <kor>28</kor>
+            <varos>Miskolc</varos>
+    </szemely>
+    <szemely id="3">
+            <nev>Riz Ottó</nev>
+            <kor>21</kor>
+            <varos>Debrecen</varos>
+    </szemely>
+
+</szemelyek>
