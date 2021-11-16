@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+	<ora id="2" tipus="elmélet">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>14</tol>
+			<ig>17</ig>
+		</idopont> 
+		<helyszin> 
+			<epulet> A1</epulet>
+			<terem> XXXII.</terem>
+		</helyszin>
+		<oktato>Dr.Dudás László</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="1" tipus="gyakorlat">
+		<targy>XML</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>14</tol>
+			<ig>17</ig>
+		</idopont> 
+		<helyszin>
+			<epulet> Info</epulet>
+			<terem> 103</terem>
+		</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="2" tipus="elmélet">
+		<targy>XML</targy>
+		<idopont nap="kedd" tol="12" ig="14"></idopont> 
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont> 
+		<helyszin>A2 I.</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="1" tipus="gyakorlat">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>18</tol>
+			<ig>19</ig>
+		</idopont> 
+		<helyszin>
+			<epulet> Info</epulet>
+			<terem> 15</terem>
+		</helyszin>
+		<oktato>Dr.Dudás László</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="3" tipus="elmélet">
+		<targy>Vállalati információs rendszerek</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>16</tol>
+			<ig>20</ig>
+		</idopont> 
+		<helyszin>
+			<epulet> Info</epulet>
+			<terem> 103</terem>
+		</helyszin>	
+		<oktato>Dr.Sasvári Péter László</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+</orarend>

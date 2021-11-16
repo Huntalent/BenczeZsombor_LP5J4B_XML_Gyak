@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nevjegykartyak>
+    <nevjegykartya id="01">
+        <nev>Krompaszki Patrik</nev>
+        <ceg>
+            <nev>Trade Apple</nev>
+            <cim>
+                <iranyitoszam></iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Petőfi</utca>
+                <hazszam>13</hazszam>
+            </cim>
+            <telefonszam>+3646456789</telefonszam>
+            <weblap>tradeapple.hu</weblap>
+            
+        </ceg>
+        <beosztas>Főnök</beosztas>
+        <telefonszam>+36301234567</telefonszam>
+        <email>trade.apple@gmail.com</email>
+    </nevjegykartya>
+    <nevjegykartya id="02">
+        <nev>Vak Béla</nev>
+        <ceg>
+            <nev>Trade Apple</nev>
+            <cim>
+                <iranyitoszam></iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Petőfi</utca>
+                <hazszam>13</hazszam>
+            </cim>
+            <telefonszam>+3646456789</telefonszam>
+            <weblap>tradeapple.hu</weblap>
+            
+        </ceg>
+        <beosztas>fejlesztő</beosztas>
+        <telefonszam>+36309876543</telefonszam>
+        <email>trade.apple.support@gmail.com</email>
+    </nevjegykartya>
+</nevjegykartyak>

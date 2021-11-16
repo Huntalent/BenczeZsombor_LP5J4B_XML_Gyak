@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="orarend" type="orarend_type"/>
+    <xs:complexType name="orarend_type">
+        <xs:sequence>
+            <xs:element name="ora" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="targy" type="xs:string"/>
+                        <xs:element name="idopont" type="idopont_type"/>
+                        <xs:element name="helyszin" type="helyszin_type"/>
+                        <xs:element name="oktato" type="xs:string" />
+                        <xs:element name="szak" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+                    <xs:attribute name="tipus" type="xs:string" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="idopont_type">
+        <xs:sequence>
+            <xs:element name="nap" type="xs:string"/>
+            <xs:element name="kezdes" type="xs:string"/>
+            <xs:element name="vege" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="helyszin_type">
+        <xs:sequence>
+            <xs:element name="epulet" type="xs:string"/>
+            <xs:element name="terem" type="xs:unsignedByte"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
