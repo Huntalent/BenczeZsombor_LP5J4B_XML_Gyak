@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE orarend [
+<!ELEMENT orarend(ora+)>
+<!ELEMENT ora (targy+, idopont+, helyszin+, oktato+, szak)>
+<!ATTLIST ora ID #REQUIRED>
+<!ELEMENT idopont(nap*, tol, ig)>
+<!ELEMENT helyszin(#PCDATA)>
+<!ELEMENT oktato (#PCDATA) >
+<!ELEMENT szak (#PCDATA) >
+]>
