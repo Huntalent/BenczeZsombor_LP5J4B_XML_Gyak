@@ -1,0 +1,53 @@
+<html>
+    <body>
+        	
+        <p>
+            <span style="font-size:25">
+  ID:
+  01</span>
+            <br>
+              Vezeteknev: <span style="color:GREEN">Bencze</span>
+            <br>
+              Keresztnev: <span style="color:BROWN">Zsombor</span>
+            <br>
+            Zsom
+   kor: <span style="color:BLUE">24</span>
+            <br>
+              Fizetes: <span style="color:RED">0</span>
+            <br>
+        </p>
+        	
+        <p>
+            <span style="font-size:25">
+  ID:
+  02</span>
+            <br>
+              Vezeteknev: <span style="color:GREEN">Füty</span>
+            <br>
+              Keresztnev: <span style="color:BROWN">Imre</span>
+            <br>
+            Imi
+   kor: <span style="color:BLUE">18</span>
+            <br>
+              Fizetes: <span style="color:RED">450000</span>
+            <br>
+        </p>
+        	
+        <p>
+            <span style="font-size:25">
+  ID:
+  03</span>
+            <br>
+              Vezeteknev: <span style="color:GREEN">Ka</span>
+            <br>
+              Keresztnev: <span style="color:BROWN">Pál</span>
+            <br>
+            Paligátor
+   kor: <span style="color:BLUE">30</span>
+            <br>
+              Fizetes: <span style="color:RED">650000</span>
+            <br>
+        </p>
+        
+    </body>
+</html>

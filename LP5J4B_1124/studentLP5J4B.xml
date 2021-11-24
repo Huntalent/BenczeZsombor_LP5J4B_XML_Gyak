@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type = "text/xsl" href = "studentLP5J4B_choose.xsl"?>
+
+<class>
+	<student id="01">
+		<vezeteknev>Bencze</vezeteknev>
+		<keresztnev>Zsombor</keresztnev>
+		<becenev>Zsom</becenev>
+		<kor>24</kor>
+		<fizetes>0</fizetes>
+	</student>
+	<student id="02">
+		<vezeteknev>Füty</vezeteknev>
+		<keresztnev>Imre</keresztnev>
+		<becenev>Imi</becenev>
+		<kor>18</kor>
+		<fizetes>450000</fizetes>
+	</student>
+	<student id="03">
+		<vezeteknev>Ka</vezeteknev>
+		<keresztnev>Pál</keresztnev>
+		<becenev>Paligátor</becenev>
+		<kor>30</kor>
+		<fizetes>800000</fizetes>
+	</student>
+</class>
