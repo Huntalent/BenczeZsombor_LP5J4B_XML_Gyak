@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaLP5J48.xsd">
+    <cars>
+        <car PlateNo="asd123" CID="001">
+            <Brand>Aygo</Brand>
+            <Modell>Toyota</Modell>
+            <Produced>2010</Produced>
+        </car>
+        <car PlateNo="cfg456" CID="002">
+            <Brand>Aygo</Brand>
+            <Modell>Toyota</Modell>
+            <Produced>2010</Produced>
+        </car>
+        <car PlateNo="mnb932" CID="003">
+            <Brand>Swift</Brand>
+            <Modell>Suzuki</Modell>
+            <Produced>2008</Produced>
+        </car>
+        <car PlateNo="kli673" CID="004">
+            <Brand>E60</Brand>
+            <Modell>BMW</Modell>
+            <Produced>2015</Produced>
+        </car>
+    </cars>
+    <CreditCards>
+        <CreditCard CardNO="12344567893" CID="001">
+            <Type>Visa</Type>
+            <Expire>23-10</Expire>
+            <Bank>K and H</Bank>
+        </CreditCard>
+        <CreditCard CardNO="45612378934" CID="002">
+            <Type>Amex</Type>
+            <Expire>23-07</Expire>
+            <Bank>OTP</Bank>
+        </CreditCard>
+        <CreditCard CardNO="98712345634" CID="003">
+            <Type>Visa</Type>
+            <Expire>23-08</Expire>
+            <Bank>ABG</Bank>
+        </CreditCard>
+        <CreditCard CardNO="12344567893" CID="004">
+            <Type>Visa</Type>
+            <Expire>23-02</Expire>
+            <Bank>CA</Bank>
+        </CreditCard>
+    </CreditCards>
+    <Costumers>
+        <Costumer CID="001">
+            <email>dean@gmail.com</email>
+            <passwd>hangpass</passwd>
+            <UserName>Dean</UserName>
+            <Name>
+                <FirstName>Dean</FirstName>
+                <LastName>Winchester</LastName>
+            </Name>
+            <Address>
+                <country>Magyarorszag</country>
+                <County>BAZ</County>
+                <Zip>3530</Zip>
+                <City>Miskolc</City>
+                <Street>Elet utca</Street>
+                <StreetNo>5</StreetNo>
+            </Address>
+        </Costumer>
+        <Costumer CID="002">
+            <email>alal1@yahoo.com</email>
+            <passwd>hunpass</passwd>
+            <UserName>Belika</UserName>
+            <Name>
+                <FirstName>Bela</FirstName>
+                <LastName>Nagy</LastName>
+            </Name>
+            <Address>
+                <country>Magyarorszag</country>
+                <County>BAZ</County>
+                <Zip>3530</Zip>
+                <City>Miskolc</City>
+                <Street>Boldog utca</Street>
+                <StreetNo>90</StreetNo>
+            </Address>
+        </Costumer>
+        <Costumer CID="003">
+            <email>hamar1@freemail.hu</email>
+            <passwd>alapass</passwd>
+            <UserName>UgraBug</UserName>
+            <Name>
+                <FirstName>Alfred</FirstName>
+                <LastName>Gonzalez</LastName>
+            </Name>
+            <Address>
+                <country>Magyarorszag</country>
+                <County>BAZ</County>
+                <Zip>3530</Zip>
+                <City>Miskolc</City>
+                <Street>Hatalom utca</Street>
+                <StreetNo>10</StreetNo>
+            </Address>
+        </Costumer>
+        <Costumer CID="004">
+            <email>nGerg@gmail.com</email>
+            <passwd>nempass</passwd>
+            <UserName>Geri78</UserName>
+            <Name>
+                <FirstName>Gergely</FirstName>
+                <LastName>Németh</LastName>
+            </Name>
+            <Address>
+                <country>Magyarorszag</country>
+                <County>Pest Megye</County>
+                <Zip>1082</Zip>
+                <City>Budapest VIII</City>
+                <Street>Hock Jánós út</Street>
+                <StreetNo>2</StreetNo>
+            </Address>
+        </Costumer>
+    </Costumers>
+    <Requests>
+        <Request ReqID="001" CID="001" PID="001">
+            <ShipMode>Személyes</ShipMode>
+            <Price>10000</Price>
+            <ShipPrice>0</ShipPrice>
+            <PayMode>KP</PayMode>
+        </Request>
+        <Request ReqID="002" CID="004" PID="003">
+            <ShipMode>Futár</ShipMode>
+            <Price>12000</Price>
+            <ShipPrice>10</ShipPrice>
+            <PayMode>BK</PayMode>
+        </Request>
+        <Request ReqID="003" CID="002" PID="002">
+            <ShipMode>Posta</ShipMode>
+            <Price>33</Price>
+            <ShipPrice>2</ShipPrice>
+            <PayMode>UV</PayMode>
+        </Request>
+    </Requests>
+    <Rates>
+        <Rate RiD="001" PID="001">
+            <Who>Belika</Who>
+            <Rate>1</Rate>
+        </Rate>
+        <Rate RiD="002" PID="003">
+            <Who>Dean</Who>
+            <Rate>4</Rate>
+        </Rate>
+        <Rate RiD="003" PID="002">
+            <Who>UgraBug</Who>
+            <Rate>6</Rate>
+        </Rate>
+    </Rates>
+    <Products>
+        <Product Pid="001">
+            <Price>12000</Price>
+            <Descreption>Komplett motor blokk</Descreption>
+            <Name>Motor</Name>
+        </Product>
+        <Product Pid="002">
+            <Price>500</Price>
+            <Descreption>Vezérműszíj</Descreption>
+            <Name>Szíj</Name>
+        </Product>
+        <Product Pid="003">
+            <Price>6000</Price>
+            <Descreption>Toronycsapágy</Descreption>
+            <Name>csapágy</Name>
+        </Product>
+        <Product Pid="004">
+            <Price>3000</Price>
+            <Descreption>Jobb normál saru</Descreption>
+            <Name>Akkumlátor</Name>
+        </Product>
+    </Products>
+    <CarTypes>
+        <CarType CTID="001" PID="001">
+            <Produced>2014</Produced>
+            <Brand>Toyota</Brand>
+        </CarType>
+        <CarType CTID="002" PID="002">
+            <Produced>2008</Produced>
+            <Brand>Toyota</Brand>
+        </CarType>
+        <CarType CTID="003" PID="003">
+            <Produced>2009</Produced>
+            <Brand>Suzuki</Brand>
+        </CarType>
+        <CarType CTID="004" PID="004">
+            <Produced>2011</Produced>
+            <Brand>BMW</Brand>
+        </CarType>
+    </CarTypes>
+    <Pictures>
+        <Picture PicID="001" PID="001">
+            <Title>Enng.jpg</Title>
+            <filePath>/home/pic/toyota</filePath>
+            <Caption>Toy</Caption>
+        </Picture>
+        <Picture PicID="002" PID="002">
+            <Title>Enng.jpg</Title>
+            <filePath>/home/pic/Toyota</filePath>
+            <Caption>Toyota</Caption>
+        </Picture>
+        <Picture PicID="003" PID="003">
+            <Title>Enng.jpg</Title>
+            <filePath>/home/pic/suz</filePath>
+            <Caption>Suz</Caption>
+        </Picture>
+        <Picture PicID="004" PID="004">
+            <Title>Enng.jpg</Title>
+            <filePath>/home/pic/BMW</filePath>
+            <Caption>BMW</Caption>
+        </Picture>
+    </Pictures>
+    <Orders>
+        <Order OrID="001" PID="001" SiD="001">
+            <PartName>Kipufogócső</PartName>
+            <CarType>Toyota</CarType>
+            <Price>3</Price>
+        </Order>
+        <Order OrID="002" PID="002" SiD="002">
+            <PartName>Komplett motor</PartName>
+            <CarType>Ferrari</CarType>
+            <Price>9000</Price>
+        </Order>
+        <Order OrID="003" PID="003" SiD="003">
+            <PartName>Stabilizátor</PartName>
+            <CarType>Audi</CarType>
+            <Price>15</Price>
+        </Order>
+        <Order OrID="004" PID="004" SiD="004">
+            <PartName>Féktárcsa</PartName>
+            <CarType>Chevrolet</CarType>
+            <Price>6</Price>
+        </Order>
+    </Orders>
+    <Suppliers>
+        <Supplier SID="001">
+            <Name>BOSCH</Name>
+            <Address>
+                <country>Magyarorszag</country>
+                <County>BAZ</County>
+                <Zip>3526</Zip>
+                <City>Miskolc</City>
+                <Street>Robert Bosch Park</Street>
+                <StreetNo>1</StreetNo>
+            </Address>
+        </Supplier>
+        <Supplier SID="002">
+            <Name>AUTOMOTIVE</Name>
+            <Address>
+                <country>England</country>
+                <County>AB10</County>
+                <Zip>1JB</Zip>
+                <City>Aberdeen</City>
+                <Street>Albyn Place</Street>
+                <StreetNo>>37</StreetNo>
+            </Address>
+        </Supplier>
+        <Supplier SID="003">
+            <Name>SEMA</Name>
+            <Address>
+                <country>Germany</country>
+                <County>D77</County>
+                <Zip>87499</Zip>
+                <City>Wildpoldsried</City>
+                <Street>Dorfmuehlstr</Street>
+                <StreetNo>>11</StreetNo>
+            </Address>
+        </Supplier>
+    </Suppliers>
+</root>

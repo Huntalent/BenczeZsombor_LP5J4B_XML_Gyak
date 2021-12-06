@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cars">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="car" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Brand" type="xs:string"/>
+                                        <xs:element name="Modell" type="xs:string"/>
+                                        <xs:element name="Produced" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="PlateNo" type="xs:string"/>
+                                    <xs:attribute name="CID" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CreditCards">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CreditCard" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Type" type="xs:string"/>
+                                        <xs:element name="Expire" type="LejaratiDatum"/>
+                                        <xs:element name="Bank" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="CardNO" type="Cardtip"/>
+                                    <xs:attribute name="CID" type="cidnum"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Costumers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Costumer" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="email" type="xs:string"/>
+                                        <xs:element name="passwd" type="xs:string"/>
+                                        <xs:element name="UserName" type="xs:string"/>
+                                        <xs:element name="Name">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirstName" type="xs:string"/>
+                                                    <xs:element name="LastName" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Address">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="country" type="xs:string"/>
+                                                    <xs:element name="County" type="xs:string"/>
+                                                    <xs:element name="Zip" type="xs:integer"/>
+                                                    <xs:element name="City" type="xs:string"/>
+                                                    <xs:element name="Street" type="xs:string"/>
+                                                    <xs:element name="StreetNo" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="CID" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Requests">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Request" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ShipMode" type="xs:string"/>
+                                        <xs:element name="Price" type="xs:string"/>
+                                        <xs:element name="ShipPrice" type="xs:string"/>
+                                        <xs:element name="PayMode" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="ReqID" type="xs:integer"/>
+                                    <xs:attribute name="CID" type="xs:integer"/>
+                                    <xs:attribute name="PID" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Rates">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Rate" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Who" type="xs:string"/>
+                                        <xs:element name="Rate" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="RiD" type="xs:string"/>
+                                    <xs:attribute name="PID" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Products">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Product" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Price" type="xs:integer"/>
+                                        <xs:element name="Descreption" type="xs:string"/>
+                                        <xs:element name="Name" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Pid" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CarTypes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CarType" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Produced" type="xs:integer"/>
+                                        <xs:element name="Brand" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="CTID" type="xs:integer"/>
+                                    <xs:attribute name="PID" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Pictures">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Picture" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title" type="xs:string"/>
+                                        <xs:element name="filePath" type="xs:string"/>
+                                        <xs:element name="Caption" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="PicID" type="xs:integer"/>
+                                    <xs:attribute name="PID" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Orders">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Order" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PartName" type="xs:string"/>
+                                        <xs:element name="CarType" type="xs:string"/>
+                                        <xs:element name="Price" type="xs:integer"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="OrID" type="xs:integer"/>
+                                    <xs:attribute name="PID" type="xs:integer"/>
+                                    <xs:attribute name="SiD" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Suppliers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Supplier" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Name" type="xs:string"/>
+                                        <xs:element name="Address">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="country" type="xs:string"/>
+                                                    <xs:element name="County" type="xs:string"/>
+                                                    <xs:element name="Zip" type="xs:string"/>
+                                                    <xs:element name="City" type="xs:string"/>
+                                                    <xs:element name="Street" type="xs:string"/>
+                                                    <xs:element name="StreetNo" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="SID" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Car_Key">
+            <xs:selector xpath="car"/>
+            <xs:field xpath="@PlateNo"/>
+        </xs:key>
+        <xs:key name="CreditCard_Key">
+            <xs:selector xpath="CreditCard"/>
+            <xs:field xpath="@CardNO"/>
+        </xs:key>
+        <xs:key name="Costumer_Key">
+            <xs:selector xpath="Costumer"/>
+            <xs:field xpath="@CID"/>
+        </xs:key>
+        <xs:key name="Request_Key">
+            <xs:selector xpath="Request"/>
+            <xs:field xpath="@ReqID"/>
+        </xs:key>
+        <xs:key name="Rate_key">
+            <xs:selector xpath="Rate"/>
+            <xs:field xpath="@RiD"/>
+        </xs:key>
+        <xs:key name="Product_key">
+            <xs:selector xpath="Product"/>
+            <xs:field xpath="@PiD"/>
+        </xs:key>
+        <xs:key name="CarTypes_key">
+            <xs:selector xpath="CarType"/>
+            <xs:field xpath="@CTID"/>
+        </xs:key>
+        <xs:key name="Picture_key">
+            <xs:selector xpath="Picture"/>
+            <xs:field xpath="@PicID"/>
+        </xs:key>
+        <xs:key name="Order_key">
+            <xs:selector xpath="Order"/>
+            <xs:field xpath="@OrID"/>
+        </xs:key>
+        <xs:key name="Supplier_key">
+            <xs:selector xpath="Supplier"/>
+            <xs:field xpath="@SID"/>
+        </xs:key>
+        <xs:keyref name="Fkey_Car_Costumer" refer="Costumer_Key">
+            <xs:selector xpath="car"/>
+            <xs:field xpath="@CID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_CreditCard_Costumer" refer="Costumer_Key">
+            <xs:selector xpath="CreditCard"/>
+            <xs:field xpath="@CID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Request_Costumer" refer="Costumer_Key">
+            <xs:selector xpath="Request"/>
+            <xs:field xpath="@CID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Request_Product" refer="Product_key">
+            <xs:selector xpath="Request"/>
+            <xs:field xpath="@PID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_CarType_Product" refer="Product_key">
+            <xs:selector xpath="CarType"/>
+            <xs:field xpath="@PID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Rates_Product" refer="Product_key">
+            <xs:selector xpath="Rate"/>
+            <xs:field xpath="@PID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Product_Order" refer="Product_key">
+            <xs:selector xpath="Order"/>
+            <xs:field xpath="@PID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Picture_Product" refer="Product_key">
+            <xs:selector xpath="Picture"/>
+            <xs:field xpath="@PID"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Order_Supplier" refer="Supplier_key">
+            <xs:selector xpath="Order"/>
+            <xs:field xpath="@SID"/>
+        </xs:keyref>
+    </xs:element>
+    <xs:simpleType name="LejaratiDatum">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1}[0-9]{1}-[0-9]{1}[0-9]{1}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Cardtip">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{11}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cidnum">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
