@@ -6,15 +6,15 @@
                 <xs:element name="cars">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="car" maxOccurs="unbounded">
+                            <xs:element name="car" maxOccurs="unbounded"> <!-- Hány kocsit tudok csinálni az adott kocsiból-->
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Brand" type="xs:string"/>
-                                        <xs:element name="Modell" type="xs:string"/>
+                                        <xs:element name="Brand" type="xs:string"/> <!-- Megadjuk a típusát, hogy sztring típus-->
+                                        <xs:element name="Modell" type="xs:string"/> 
                                         <xs:element name="Produced" type="xs:string"/>
                                     </xs:sequence>
-                                    <xs:attribute name="PlateNo" type="xs:string"/>
-                                    <xs:attribute name="CID" type="xs:string"/>
+                                    <xs:attribute name="PlateNo" type="xs:string"/> <!-- FK nak itt adom meg, hogy attribútum-->
+                                    <xs:attribute name="CID" type="xs:string"/>     <!-- PK nak itt adom meg, hogy attribútum-->
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -27,7 +27,7 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="Type" type="xs:string"/>
-                                        <xs:element name="Expire" type="LejaratiDatum"/>
+                                        <xs:element name="Expire" type="LejaratiDatum"/> <!-- Ez a saját típusom-->
                                         <xs:element name="Bank" type="xs:string"/>
                                     </xs:sequence>
                                     <xs:attribute name="CardNO" type="Cardtip"/>
@@ -203,13 +203,13 @@
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
-        <xs:key name="Car_Key">
-            <xs:selector xpath="car"/>
-            <xs:field xpath="@PlateNo"/>
+        <xs:key name="Car_Key"> <!-- Elnevezem valahogy a kucslot-->
+            <xs:selector xpath="car"/> <!-- Adott mező amit adtunk XML-ben-->
+            <xs:field xpath="@PlateNo"/> <!-- Az adott mezőnek a Primary kulcsa-->
         </xs:key>
-        <xs:key name="CreditCard_Key">
-            <xs:selector xpath="CreditCard"/>
-            <xs:field xpath="@CardNO"/>
+        <xs:key name="CreditCard_Key">      <!-- Elnevezem valahogy a kucslot-->
+            <xs:selector xpath="CreditCard"/>   <!-- Adott mező amit adtunk XML-ben-->
+            <xs:field xpath="@CardNO"/>     <!-- Az adott mezőnek a Primary kulcsa, a kukac az ilyen attribútum-->
         </xs:key>
         <xs:key name="Costumer_Key">
             <xs:selector xpath="Costumer"/>
@@ -243,11 +243,11 @@
             <xs:selector xpath="Supplier"/>
             <xs:field xpath="@SID"/>
         </xs:key>
-        <xs:keyref name="Fkey_Car_Costumer" refer="Costumer_Key">
-            <xs:selector xpath="car"/>
-            <xs:field xpath="@CID"/>
+        <xs:keyref name="Fkey_Car_Costumer" refer="Costumer_Key"> <!-- Összekötöm a Piramry keyt a Foreign keyyel-->
+            <xs:selector xpath="car"/> <!-- Idegen kulcs táblája-->
+            <xs:field xpath="@CID"/>    <!-- Idegen kulcs-->
         </xs:keyref>
-        <xs:keyref name="Fkey_CreditCard_Costumer" refer="Costumer_Key">
+        <xs:keyref name="Fkey_CreditCard_Costumer" refer="Costumer_Key"> <!-- referrel hivatkozok amivel összekötöm-->
             <xs:selector xpath="CreditCard"/>
             <xs:field xpath="@CID"/>
         </xs:keyref>
@@ -280,14 +280,14 @@
             <xs:field xpath="@SID"/>
         </xs:keyref>
     </xs:element>
-    <xs:simpleType name="LejaratiDatum">
+    <xs:simpleType name="LejaratiDatum"> <!-- Ez a saját típus, ez egy string típus-->
         <xs:restriction base="xs:string">
-            <xs:pattern value="[0-9]{1}[0-9]{1}-[0-9]{1}[0-9]{1}" />
+            <xs:pattern value="[0-9]{1}[0-9]{1}-[0-9]{1}[0-9]{1}" /> <!-- regural expression | mező megkötés 0-9 lehet 1 darab, aztán megint 0-9 1 darab utána kötőjel 0-9 valamelyik szám-->
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="Cardtip">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[0-9]{11}" />
+            <xs:pattern value="[0-9]{11}" /> <!--  0- 9 ig 11 darab szám-->
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="cidnum">

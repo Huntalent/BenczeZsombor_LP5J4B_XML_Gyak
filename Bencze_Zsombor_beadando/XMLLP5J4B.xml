@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaLP5J48.xsd">
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaLP5J4B.xsd"> <!-- Innen származik minden-->
     <cars>
-        <car PlateNo="asd123" CID="001">
-            <Brand>Aygo</Brand>
-            <Modell>Toyota</Modell>
-            <Produced>2010</Produced>
+        <car PlateNo="asd123" CID="001"> <!-- PlateNo a foreign key | CID a primary key ezeket attribútumba rakjuk-->
+            <Brand>Aygo</Brand>     <!-- Elemei a cars-nak-->
+            <Modell>Toyota</Modell> <!-- Elemei a cars-nak-->
+            <Produced>2010</Produced> <!-- Elemei a cars-nak-->
         </car>
         <car PlateNo="cfg456" CID="002">
             <Brand>Aygo</Brand>
@@ -23,10 +23,10 @@
         </car>
     </cars>
     <CreditCards>
-        <CreditCard CardNO="12344567893" CID="001">
-            <Type>Visa</Type>
-            <Expire>23-10</Expire>
-            <Bank>K and H</Bank>
+        <CreditCard CardNO="12344567893" CID="001"> <!-- CardNo a foreign key | CID a primary key ezeket attribútumba rakjuk-->
+            <Type>Visa</Type>       <!-- Elemei a CreditCard-nak-->
+            <Expire>23-10</Expire>  <!-- Elemei a CreditCard-nak-->
+            <Bank>K and H</Bank>    <!-- Elemei a CreditCard-nak-->
         </CreditCard>
         <CreditCard CardNO="45612378934" CID="002">
             <Type>Amex</Type>
